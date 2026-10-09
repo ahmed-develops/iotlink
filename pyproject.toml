@@ -1,0 +1,21 @@
+[project]
+name = "laya"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Ahmed", email = "ma675967@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.141.1",
+    "laya-mlx>=0.2.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+laya = "laya:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
